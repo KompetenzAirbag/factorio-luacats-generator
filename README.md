@@ -12,7 +12,7 @@ node luaCATS_generator.js
 ```
 
 ## Neovim
-If you are using Neovim with `nvim-lspconfig` you can add the folder containing the Factorio meta to `lua_ls` to your workspace:
+If you are using Neovim with `nvim-lspconfig` you can add the folder containing the Factorio meta to your `lua_ls` settings:
 ```{lua}
 lua_ls = {
   settings = {
