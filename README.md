@@ -1,5 +1,5 @@
 # Factorio API LuaCATS generator
-This script will generate LuaCATS-style notations in the specified folder. Since this is plain Lua it can be read by any LSP and used for type completion.
+This script will generate LuaCATS-style notations. Since this is plain Lua it can be read by any LSP and used for type completion.
 
 # Requirements
 - nodsjs
