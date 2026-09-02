@@ -30,3 +30,4 @@ lua_ls = {
 # TODO
 - [ ] Factorio runtime implementation
 - [ ] Automated generation of Factorio helper functions
+- [ ] Add descriptions for `type` types

@@ -157,8 +157,6 @@ function parse_type( proptype, parent_type ) {
                     file_content += "_" + parent_type.name
                 } else {
                     console.log( "Overwriting of struct_prototype not allowed" )
-                    console.log( struct_prototype )
-                    console.log( parent_type )
                 }
                 break
             case "type":
@@ -267,12 +265,6 @@ for( const key in factorio_api_json.types ) {
 
     parse_properties_sorted( type.properties )
 }
-
-// Builtins
-file_content += "---@alias double number Format uses a dot as its decimal delimiter. Doubles are stored in the [double precision](https://en.wikipedia.org/wiki/Double-precision_floating-point_format) floating point format. May not be [NaN](https://en.wikipedia.org/wiki/NaN)."
-file_content += "---@alias float number Format uses a dot as its decimal delimiter. Floats are stored in the [single precision](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) floating point format. May not be [NaN](https://en.wikipedia.org/wiki/NaN)."
-file_content += "---@alias int16 number 16 bit signed integer. Ranges from `-32 768` to `32 767`, or `[-2^15, 2^15-1]`. Decimal numbers are automatically truncated when used in place of `int16`."
-file_content += 
 
 write_file( "types" )
 
